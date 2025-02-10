@@ -5,12 +5,12 @@ Minazon est une plateforme où les joueurs peuvent trouver d'autres joueurs en f
 ## Fonctionnalités
 
 - **Connexion par GitHub** : Possibilité d'utiliser un compte GitHub
+- **Recherche de joueurs** : Trouvez d'autres joueurs en fonction du serveur que vous avez choisi.
 
 ## A venir
 
 - **Connexion par Google** : Possibilité d'utiliser un compte Google.
 - **Connexion par Email** : Possibilité de créer un compte Minazon.
-- **Recherche de joueurs** : Trouvez d'autres joueurs en fonction du serveur que vous avez choisi.
 - **Gestion des échanges** : Gérez vos échanges avec d'autres joueurs directement sur le site web.
 - **Intégration In-Game** : Je planifie de coder un plugin pour avoir une intéraction directement depuis le jeu.
 - **Chat privé** : Le site possède un chat privé unique pour chaque échanges.
@@ -34,6 +34,10 @@ Si vous rencontrez des problèmes ou avez des suggestions, veuillez ouvrir une i
 5. Soumettez l'issue.
 
 Merci de votre aider pour améliorer Minazon !
+
+## Api
+
+Ce projet utilise [Minotar](https://minotar.net), [mc-api](https://mc-api.net) et  [minecraft-api (unofficial)](https://anish-shanbhag.stoplight.io/docs/minecraft-api/8e768e6831f6c-the-minecraft-api)
 
 ## Licence
 
