@@ -1,5 +1,5 @@
 import { useLayoutEffect, useState } from "react";
-import { PiArrowsLeftRight, PiWarning } from "react-icons/pi";
+import { PiArrowsLeftRight, PiUserPlus, PiWarning } from "react-icons/pi";
 import { useSearchParams } from "react-router";
 import User, { findUserByName } from "../classes/User";
 import { useAuth } from "../tools/useAuth";
@@ -43,12 +43,11 @@ export default function Profile() {
                 <img src={`https://minotar.net/helm/${user?.displayName}`} alt={`${user?.displayName} avatar`} />
                 <div>
                     <h1 className="mc">Profil de {user?.displayName || "personne"}</h1>
-                    {displayName !== user?.displayName &&
-                        <section className="flex gap-5">
-                            <button className="btn btn-success btn-soft hover:!border-success"><PiArrowsLeftRight /> Proposer un échange</button>
-                            <button className="!btn !btn-error btn-dash hover:!border-error"><PiWarning />Signaler</button>
-                        </section>
-                    }
+                    <section className="flex gap-5">
+                        <button className={`btn btn-success btn-soft hover:!border-success`} disabled={displayName === user?.displayName}><PiArrowsLeftRight /> Proposer un échange</button>
+                        <button className={`!btn !btn-info btn-dash hover:!border-info`} disabled={displayName === user?.displayName}><PiUserPlus />Demander en ami</button>
+                        <button className={"!btn !btn-error btn-dash hover:!border-error"} disabled={displayName === user?.displayName}><PiWarning />Signaler</button>
+                    </section>
                 </div>
             </div>
             <main className="mt-5">
