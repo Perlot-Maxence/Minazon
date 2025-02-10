@@ -1,4 +1,4 @@
-# Minazon
+![Minazon logo](public/minazon2.png)
 
 Minazon est une plateforme où les joueurs peuvent trouver d'autres joueurs en fonction du serveur qu'ils ont choisi. Ils peuvent ensuite gérer des échanges ensemble via le site web.
 
