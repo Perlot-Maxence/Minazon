@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import { PiArrowRight } from "react-icons/pi";
 import { get10lastTrades, Trade } from "../classes/Trade";
-import { Timestamp } from "firebase/firestore";
 
 export default function Home() {
 
 
     // const { isLogged, displayName } = useAuth();
     const [lastTrades, setLastTrades] = useState<Trade[]>([]);
-    const [welcome, setWelcome] = useState(false);
 
     useEffect(() => {
         get10lastTrades().then((trades) => {

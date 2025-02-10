@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import { PiArrowsLeftRight, PiWarning } from "react-icons/pi";
 import { useSearchParams } from "react-router";
 import User, { findUserByName } from "../classes/User";
@@ -7,7 +7,7 @@ import { useAuth } from "../tools/useAuth";
 export default function Profile() {
 
     const [user, setUser] = useState<User | null>(null);
-    const [urlParams, setUrlParams] = useSearchParams();
+    const [urlParams] = useSearchParams();
     const { isLogged, displayName } = useAuth();
 
     useLayoutEffect(() => {

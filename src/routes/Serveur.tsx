@@ -5,7 +5,7 @@ import { useSearchParams } from "react-router";
 export default function Serveur() {
 
     const [server, setServer] = useState<Server | null>(null);
-    const [urlParams, setUrlParams] = useSearchParams();
+    const [urlParams] = useSearchParams();
 
 
     useEffect(() => {
